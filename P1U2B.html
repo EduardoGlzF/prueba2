@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTXD XHTML 1.0 Transitional//EN"
+"http://wwww.w3.org/TR/xhtml1/DTD/zhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <head>
+
+        <title>
+            Formulario producto
+          </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <script type="text/javascript">
+           function MM_popupMsg(msg){alert(msg);}
+        </script>
+
+    </head>
+
+    <body onload="MM_popupMsg('Bienvenido')"">
+      <form>
+
+        <h1>Informacion sobre el producto</h1>
+        <fieldset>
+          <legend>Datos basicos</legend>
+          <p>
+            <label>Nombre</label><br/>
+            <input type="text" id="txt_nombre" value=""/><br/>
+            </p>
+          <p>
+              <label>Descripcion</label><br/>
+              <textarea id="texarea_ejemplo" rows="4" cols="60"></textarea>
+          </p>
+          <p>
+              <label>Foto</label>
+              <input type="text" id="txt_fond" value=""/>
+              <input type="button" id="boton" value="Elegir">
+              <p/>
+          <p>
+              <input type="checkbox" id="mask" name="unmask"value="1"/>
+              <label for="añadir">Añadir contador de visitas</label>
+          </p>
+        </fieldset>
+        <legend>Datos especificos de producto</legend>
+          <label>Precio</label>
+          <input type="text" id="txt_precio" value=""/>
+          <label>$</label>
+          <label>Impuestos</label>
+          Especificacion de producto_temaII.html
+          <select name="email">
+            <option>4%</option>
+            <option>7%</option>
+            <option>16%</option>
+            <option>25%</option>
+          </select>
+
+          <p>
+              Promocion:<br/>
+              <input type="radio" id="opcion 1" name="tipo_ninguno" value="1"/>
+              <label for="ninguno">Ninguno</label>
+              <br/>
+
+            <input type="radio" id="opcion 2" name="tipo_transporte" value="2"/>
+            <label for="transporte gratuito">Transporte gratuito</label>
+            <br/>
+
+            <input type="radio" id="opcion 3" name="tipo_descuento" value="3"/>
+            <label for="descuento 5%">Descuento 5%</label>
+          </p>
+      </form>
+    </body>
+    <html/>
