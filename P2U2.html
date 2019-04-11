@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+        <title>
+            Practica # 20 unidad 2
+          </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="estilo12.css">
+
+        <script type="text/javascript">
+            document.write(document.lastModified)
+        </script><!--Imprimir fecha y hora-->
+
+        <script type="text/javascript">function hacer_click()
+          {
+              alert("Me haz dado un click");
+            }
+          function hace_hover()
+            {
+              alert("Estas sobre mi");
+            }
+          function salir_del_hover()
+            {
+              alert("Adios");
+            }
+          function cargar_pagina()
+          {
+            alert("Ya se ha cargado el sitio web")
+          }
+
+        </script> <!--Bloque de script funciones boton dame click-->
+
+    </head>
+    <body onload="alert('Bienvenido')"><!--Enviar mensaje de alerta al iniciar-->
+
+
+
+    <h1 style="text-align: center">Formulario con controles clasicos</h1>
+    <form>
+
+      <input type="button" name="" value="dame click" onmouseout="salir_del_hover()"
+      onmouseover="hace_hover()" onclick="hacer_click()"> <!--boton con funciones-->
+
+      <fieldset>
+        <legend>Botones</legend>
+        <p>
+            <label>Campo de texto:</label>
+            <input type="text" id="txt_ejemplo" value="textotextotexto"/>
+        </p>
+        <p>
+            <label>Area de tecto:</label>
+            <textarea id="txtar_ejemplo" rows="4" cols="60">Puede colocar texto</textarea>
+        </p>
+        <p>
+            <label>Campo para contraseña:</label>
+            <input type="password" id="psw_ejemplo" value="contraseña"/>
+        </p>
+      </fieldset>
+
+      <fieldset>
+          <legend>Controles de seleccion</legend>
+          <p>
+              Lista de seleccion simple(tipo combo):
+              <select name="mascota 1">
+              <option>Perro</option>
+              <option>Gato</option>
+              <option>Roedor</option>
+              </select>
+
+              Lista de seleccion simple:
+              <select name="Mascota 2" size="1">
+                <option>Perro</option>
+                <option>Gato</option>
+                <option>Roedor</option>
+              </select>
+          </p>
+
+          <p>
+              Lista de botones radio:
+              <input type="radio" id="Perro" name="tipo_mascota" value="1"/>
+              <label for="Perro">Perro</label>
+              <input type="radio" id="Gato" name="tipo_mascota"value="2">
+              <label for="Gato">Gato</label>
+              <input type="radio" id="Roedor" name="tipo_mascota" value="3"
+
+              <label for="Roedor">Roedor</label>
+          </p>
+
+          <p>
+              <label>Lista de cajas(checkbox):</label>
+              <input type="checkbox" id="Chico" name="tamp_chico"value="1"/>
+              <label for ="Chico">Chico</label>
+              <input type="checkbox" id="Mediano" name="tam_mediano" value="2"/>
+              <label for ="Chico">Mediano</label>
+              <input type="checkbox" id="Grande" name="tam_mediano" value="3"/>
+              <label for ="Chico">Grande</label>
+          </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Botones</legend>
+        <p>
+            <input type="submit" id="envia" value="Enviar informacion"/>
+            <input type="reset" id="borrar" value="Borrar informacion"/>
+            <input type="button" id="boton" value="boton"/>
+        </p>
+    </fieldset>
+
+      <fieldset>
+        <legend>Otros</legend>
+        <p>
+            <label>Imagen:</label>
+            <input type="image" id="imagen" src="mascotas.jpg" alt="Imagen CSS"/>
+            <label>&nbsp;&nbsp;&nbsp;Aqui otro control oculto(tipo hidden)<label/>
+            <input type="hidden" id="Oculto" value"Borrar informacion"/>
+        </p>
+      </fieldset>
+    </body>
+  </html>
