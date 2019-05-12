@@ -7,8 +7,17 @@
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
+<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />
 </head>
 
-<body>
+<body id="cuerpo">
+	<div id="principal">
+		<div id="cabecera">Colocar aquí el contenido para  id "cabecera"</div>  		
+  		<div id="contenido">
+			<div id="menu">Colocar aquí el contenido para  id "menu"</div>
+			Colocar aquí el contenido para  id "contenido"
+		</div>
+  		<div id="pie">Colocar aquí el contenido para  id "pie"</div>
+	</div>
 </body>
 </html>

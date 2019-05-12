@@ -1,0 +1,115 @@
+/* CSS Document */
+
+*{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+
+#cuerpo{
+	background-color: salmon;
+}
+
+#principal {
+	background-color: #0000FF;
+	width: auto;
+	height: auto;
+	clip: rect(auto,auto,auto,auto);
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: auto;
+	padding-left: auto;
+	font-size: 14px;
+}
+#principal #pie {
+	height: 130px;
+	width: auto;
+	float: left;
+	background-color: green;
+	
+}
+
+#principal #cabecera {
+	background-color: red;
+	height: 100px;
+	width: auto;
+	background-image: url(../imagenes/banner2.png);
+}
+#principal #contenido {
+	background-color: white;
+	height: auto;	
+	width: 1400px;
+	float: left;
+	align-content: center;
+	text-align: center;
+}
+#principal #contenido #menu {
+	float: left;
+	height: 70px;
+	width: 1400px;
+	background-color: rebeccapurple;
+	font-size: 16px;
+}
+
+#principal #contenido div {
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+}
+#principal #contenido {
+	font-size: 16px;
+	text-align: left;
+}
+#principal #contenido table {
+	font-size: 18px;
+	text-align: center;
+	color: #000;
+}
+#principal #contenido p {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+}
+#principal #contenido h1 strong {
+	text-align: center;
+}
+.centro {
+	text-align: center;
+}
+.brillo:hover{
+	background-color: #0F9;	
+	
+}
+#principal #contenido #form1 {
+	float: none;
+}
+.session {
+	text-align: justify;
+}
+#principal #contenido div #form1 .session {
+	text-align: left;
+}
+.producto {
+	background-color: #06F;
+	font-size: 16px;
+	color: #FFF;
+	width: 390px;
+	float: center;
+	margin: 10px;
+	padding: 10px;
+}
+#principal #contenido div .producto h4 {
+	color: #FFF;
+	font-size: 16px;
+}
+#principal #contenido #menu div div p a {
+	text-align: right;
+}
+#principal #contenido #menu div div a {
+	font-size: 14px;
+}
+#principal #contenido div .producto {
+	font-size: 16px;
+}
+
