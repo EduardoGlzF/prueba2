@@ -12,7 +12,7 @@
 
 <body id="cuerpo">
 	<div id="principal">
-		<div id="cabecera">Colocar aquí el contenido para  id "cabecera"</div>  		
+		<div id="cabecera">Colocar aquí el contenido para  id "cabeceraa"</div>  		
   		<div id="contenido">
 			<div id="menu">Colocar aquí el contenido para  id "menu"</div>
 			Colocar aquí el contenido para  id "contenido"

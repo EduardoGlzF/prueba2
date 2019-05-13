@@ -1,54 +1,46 @@
 /* CSS Document */
 
-*{
-	margin: 0px;
-	padding: 0px;
-	
-}
-
-
 #cuerpo{
 	background-color: salmon;
 }
 
 #principal {
 	background-color: #0000FF;
-	width: auto;
+	width: 1300px;
 	height: auto;
 	clip: rect(auto,auto,auto,auto);
-	margin-right: 0px;
-	margin-left: 0px;
+	margin-right: auto;
+	margin-left: auto;
 	padding-right: auto;
 	padding-left: auto;
 	font-size: 14px;
 }
 #principal #pie {
 	height: 130px;
-	width: auto;
+	width: 1300px;
 	float: left;
-	background-color: green;
+	background-color: red;
 	
 }
 
 #principal #cabecera {
 	background-color: red;
 	height: 100px;
-	width: auto;
+	width: 1300px;
 	background-image: url(../imagenes/banner2.png);
 }
 #principal #contenido {
 	background-color: white;
-	height: auto;	
-	width: 1400px;
+	height: auto;
+	width: 1300px;
 	float: left;
-	align-content: center;
 	text-align: center;
 }
 #principal #contenido #menu {
 	float: left;
 	height: 70px;
-	width: 1400px;
-	background-color: rebeccapurple;
+	width: 1300px;
+	background-color: red;
 	font-size: 16px;
 }
 
@@ -112,4 +104,5 @@
 #principal #contenido div .producto {
 	font-size: 16px;
 }
+
 
