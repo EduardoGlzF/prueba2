@@ -57,15 +57,15 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
   		<div id="contenido">
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			
-				<div align="center">
+						
+				<div align="center" >
     				 <h1>Catalogo</h1>
      				 <?php do { ?>
-       				 <div class="producto">
+       				 <div class="producto"  >
 	   				 	<h4  align="center" > <?php echo $row_Recordset1['strNombre']; ?></h4>
         			 	<h4>
         
-         			 		<img src="imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="270" height="168" /> 
+         			 		<img src="../imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="270" height="168" /> 
            			 		<p>&nbsp;</p>
          			 		<pre> Precio:$<?php echo $row_Recordset1['dblPrecio']; ?></pre>
         			 	</h4>
