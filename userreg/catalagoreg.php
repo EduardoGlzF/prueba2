@@ -1,4 +1,4 @@
-<?php require_once('conexion/conexionbd.php'); ?>
+<?php require_once('../conexion/conexionbd.php'); ?>
 <?php
 
 if (!function_exists("GetSQLValueString")) {
@@ -48,12 +48,12 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />
 </head>
 
 <body id="cuerpo">
 	<div id="principal">
-		<div id="cabecera"><img src="imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
+		<div id="cabecera"><img src="../imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
   		<div id="contenido">
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
@@ -69,7 +69,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
            			 		<p>&nbsp;</p>
          			 		<pre> Precio:$<?php echo $row_Recordset1['dblPrecio']; ?></pre>
         			 	</h4>
-        			 	<p><a href="ver_producto.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="imagenes/masinformacion.png" width="265" height="86" /></a></p>
+        			 	<p><a href="../ver_producto.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/masinformacion.png" width="265" height="86" /></a></p>
        				</div>
       			    <?php } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
    				</div>			
