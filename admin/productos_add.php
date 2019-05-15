@@ -10,12 +10,12 @@ if (isset($_SERVER['QUERY_STRING'])) {
 
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   $insertSQL = sprintf("INSERT INTO tblproducto (strNombre, strSeo, dblPrecio, intEstado, strDescripcion, strImagen) VALUES (%s, %s, %s, %s, %s, %s)",
-                       GetSQLValueString($_POST['strNombre'], "text"),
-                       GetSQLValueString($_POST['strSeo'], "text"),
-                       GetSQLValueString($_POST['dblPrecio'], "double"),
-                       GetSQLValueString($_POST['intEstado'], "int"),
-                       GetSQLValueString($_POST['strDescripcion'], "text"),
-					   GetSQLValueString($_POST['strImagen'], "text"));
+                       $_POST['strNombre'],
+                       $_POST['strSeo'],
+                       $_POST['dblPrecio'],
+                       $_POST['intEstado'],
+                       $_POST['strDescripcion'],
+					   $_POST['strImagen']);
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$insertSQL) or die(mysqli_error());
