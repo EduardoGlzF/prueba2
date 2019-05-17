@@ -3,8 +3,8 @@
   
 
 if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
-	$idproducto = $_POST['idProductos'];
-  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto'";
+	$idproducto1 = $_GET['idProductos'];
+  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto1'";
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
@@ -18,8 +18,8 @@ if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
 }
 
 if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
-	$idproducto = $_POST['idProductos'];
-  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto'";
+	$idproducto2 = $_GET['idProductos'];
+  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto2'";
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
@@ -33,8 +33,8 @@ if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
 }
 
 if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
-	$idproducto = $_POST['idProductos'];
-  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto'";
+	$idproducto = $_GET['recordID'];	
+  $deleteSQL = sprintf("DELETE FROM tblproducto WHERE idProductos=%s",$idproducto);
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
