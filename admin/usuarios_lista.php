@@ -52,12 +52,36 @@ $queryString_datosusuario = sprintf("&totalRows_datosusuario=%d%s", $totalRows_d
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />
+  <link rel="stylesheet" type="text/css" href="../estilos/slider_style.css">
+
+ <meta name="viewport" content="width = divice-width,
+         user-scalable=no, initial-scale=1, maximum-scale=1,
+         minima-scale=1">
 </head>
+				
+  		
 
 <body id="cuerpo">
-	<div id="principal">
-		<div id="cabecera"><img src="../imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
+	
+	<div id="principal">	
+		<div id="cabecera">		
+			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			
+				<div id="menuHorizontal">
+					<ul class="menuH">
+						<li class="menuH"><a href="#">inicio</a></li>
+						<li class="menuH"><a href="#">Telefonía</a></li>
+						<li class="menuH"><a href="#">Computo</a></li>
+						<li class="menuH"><a href="#">Ofertas</a></li>
+					</ul>			
+				</div>
+							
+			
+		</div>		
+			 		
+			 		 		 		
   		<div id="contenido">
+  		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
 			<div align="center">
@@ -110,8 +134,10 @@ Registros <?php echo ($startRow_datosusuario + 1) ?> a <?php echo min($startRow_
     </div>
 			
 			<!-- InstanceEndEditable -->
-		</div>
-  		<div id="pie" >
+		</div><br>
+		
+		
+		<div id="pie" >
 			<div align="center" class="pieorden">
 				<div class="pie1"><h2>Conócenos</h2>
 					<p>Trabajar en Amazon</p>

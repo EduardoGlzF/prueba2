@@ -100,7 +100,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Home</a></li>
+						<li class="menuH"><a href="#">inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
 						<li class="menuH"><a href="#">Computo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>

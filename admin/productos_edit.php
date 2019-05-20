@@ -80,7 +80,7 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Home</a></li>
+						<li class="menuH"><a href="#">inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
 						<li class="menuH"><a href="#">Computo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
