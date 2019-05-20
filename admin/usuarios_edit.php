@@ -16,7 +16,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        $direccion=$_POST['strDirccion'];
                        $contrasena=$_POST['strContrasena'];
                        $idusuario=$_POST['idUsuario'];
-  $updateSQL = "UPDATE tblusuario SET strNombre='$nombre', strEmail='$email', intActivo='$activo', intTelefono='$telefono', intPrivilegio='$privilegio', strDirccion='$direccion', strContrasena='$contrasesna' WHERE idUsuario='$idusuario'";
+  $updateSQL = "UPDATE tblusuario SET strNombre='$nombre', strEmail='$email', intActivo='$activo', intTelefono='$telefono', intPrivilegio='$privilegio', strDirccion='$direccion', strContrasena='$contrasena' WHERE idUsuario='$idusuario'";
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$updateSQL) or die(mysqli_error());
