@@ -19,7 +19,7 @@
 		</div>
   		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><h2>Conócenos</h2>
+				<div class="pie1"><h2>Conócenos </h2>
 					<p>Trabajar en Amazon</p>
 					<p>Información corporativa</p>
 					<p>Departamento de prensa</p>

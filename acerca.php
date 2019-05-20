@@ -15,7 +15,7 @@
 		<div id="cabecera"><img src="imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
   		<div id="contenido">
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->jdjdjjdsjcnsdcj<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" --><!-- InstanceEndEditable -->
 		</div>
   		<div id="pie" >
 			<div align="center" class="pieorden">
