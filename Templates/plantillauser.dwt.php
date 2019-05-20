@@ -1,14 +1,14 @@
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/plantillaadmin.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html>
 <head>
 <meta charset="utf-8">
-<!-- InstanceBeginEditable name="doctitle" -->
+<!-- TemplateBeginEditable name="doctitle" -->
 <title>Documento sin título</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />
-  <link rel="stylesheet" type="text/css" href="../estilos/slider_style.css">
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->encabezadoeditable
+<!-- TemplateEndEditable -->
+
+<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
 
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -21,7 +21,7 @@
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			<div id="logo"><a href="#"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
@@ -31,15 +31,16 @@
 						<li class="menuH"><a href="#">Ofertas</a></li>
 					</ul>			
 				</div>
-							
-			
-		</div>		
-			 		
+						
+			<div id="login"><a href="#"><img src="../imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Iniciar sesion</p></div>					
+		
+		 </div>					 		
 			 		 		 		
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" --><h1>Su pruducto se a&ntilde;adio exitosa mente </h1><!-- InstanceEndEditable -->
+			<!-- TemplateBeginEditable name="contenidoeditable" -->contenidoeditable<!-- TemplateEndEditable -->
 		</div><br>
 		
 		
@@ -65,4 +66,4 @@
 		</div>
 	</div>
 </body>
-<!-- InstanceEnd --></html>
+</html>

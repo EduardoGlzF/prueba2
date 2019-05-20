@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Documento sin título</title>
+<title>Index</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
-<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />
-  <link rel="stylesheet" type="text/css" href="../estilos/slider_style.css">
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css" />
+  <link rel="stylesheet" type="text/css" href="estilos/slider_style.css">
 
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -21,7 +21,7 @@
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			<div id="logo"><img src="imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
@@ -39,7 +39,18 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" --><h1>Su pruducto se a&ntilde;adio exitosa mente </h1><!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			
+			<div class="slider">
+          <ul>
+            <li><a href="slider0.html"><img src="imagenes/slider2.jpg" alt""></a></li>
+            <li><img src="imagenes/slider3.jpg" alt""></li>
+            <li><img src="imagenes/slider4.jpg" alt""></li>
+            <li><img src="imagenes/slider3.jpg" alt""></li>
+          </ul>
+			</div>
+			
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		

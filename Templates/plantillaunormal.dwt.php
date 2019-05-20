@@ -12,7 +12,8 @@
 
 <body id="cuerpo">
 	<div id="principal">
-		<div id="cabecera"><img src="../imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
+		  	
+ 		<div id="cabecera"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/>	
   		<div id="contenido">
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- TemplateBeginEditable name="contenidoeditable" -->contenidoeditable<!-- TemplateEndEditable -->

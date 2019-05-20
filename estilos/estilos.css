@@ -31,7 +31,47 @@
 	height: 100px;
 	width: auto;
 	/*background-image: url(../imagenes/banner2.png);*/
+	
 }
+
+#principal #cabecera #logo{ /*Agregar logo a cabecera*/
+	padding-left: 20px;
+	padding-top: 10px;
+	float: left;
+	
+}
+
+.menuH li a{  /* Agregar estilo texto menu*/
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;	
+	text-decoration: none;
+	
+}
+
+ul.menuH{ /*Menu horizontal*/
+	margin: 0;
+	padding-top: 40px;
+	
+}
+
+ul.menuH li{ /*Menu horizontal*/
+	display: block;
+	float: left;
+	padding: 0 90px;
+
+}
+
+#login{
+ 	width: 50;
+	height: 90;
+	margin-right: 10px;
+	margin-top: -15px;
+	float: right; 
+	text-align: center;
+}
+
+
 #principal #contenido {
 	background-color: white;
 	height: auto;
@@ -44,6 +84,13 @@
 	padding-left: auto;
 	text-align: center;
 }
+
+#principal #cabecera p{
+	color: white;
+	font-size: 14;
+	
+}
+
 #principal #contenido #menu {
 	float: left;
 	height: 70px;
@@ -128,4 +175,10 @@
 	display: flex;
 	justify-content: space-around;
 }
+
+
+
+
+
+
 

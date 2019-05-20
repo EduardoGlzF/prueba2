@@ -53,7 +53,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 
 <body id="cuerpo">
 	<div id="principal">
-		<div id="cabecera"><img src="../imagenes/logo1.png" width="150" height="50" alt=""/></div>  		
+		<!--<div id="cabecera"><img src="../imagenes/logo1.png" width="150" height="50" alt=""/></div>-->
   		<div id="contenido">
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
@@ -98,7 +98,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			</div>
 		</div>
 	</div>
-</body>
+	</body>
 <!-- InstanceEnd --></html>
 <?php
 mysqli_free_result($Recordset1);
