@@ -6,8 +6,8 @@ if ((isset($_GET['idUsuario'])) && ($_GET['idUsuario'] != "")) {
 	$idUsuario1=$_GET['idUsuario'];
   $deleteSQL = "DELETE FROM tblusuario WHERE idUsuario='$idUsuario1'";
 
-  mysqli_select_db($database_conexionmanzanas, $conexionmanzanas);
-  $Result1 = mysqli_query($deleteSQL, $conexionmanzanas) or die(mysqli_error());
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
 
   $deleteGoTo = "usuarios_lista.php";
   if (isset($_SERVER['QUERY_STRING'])) {
@@ -18,11 +18,11 @@ if ((isset($_GET['idUsuario'])) && ($_GET['idUsuario'] != "")) {
 }
 
 if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
-  $deleteSQL = sprintf("DELETE FROM tblusuario WHERE idUsuario=%s",
-                       GetSQLValueString($_GET['recordID'], "int"));
+	$idUsuario2=$_GET['recordID'];
+  $deleteSQL = "DELETE FROM tblusuario WHERE idUsuario='$idUsuario2'";
 
-  mysql_select_db($database_conexionmanzanas, $conexionmanzanas);
-  $Result1 = mysql_query($deleteSQL, $conexionmanzanas) or die(mysql_error());
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
 
   $deleteGoTo = "usuarios_lista.php";
   if (isset($_SERVER['QUERY_STRING'])) {
