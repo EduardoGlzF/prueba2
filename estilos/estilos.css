@@ -137,7 +137,7 @@ ul.menuH li{ /*Menu horizontal*/
 #principal #contenido div #form1 .session {
 	text-align: left;
 }
-.producto {
+#principal #contenido .producto {
 	background-color: #06F;
 	font-size: 16px;
 	color: #FFF;
@@ -145,8 +145,24 @@ ul.menuH li{ /*Menu horizontal*/
 	float: center;
 	margin: 10px;
 	padding: 10px;
+}
+
+#principal #contenido .galeria{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
 	
 }
+
+#principal #contenido #h1catalogo{
+	text-align: center;
+}
+
+#principal #contenido #catalogoTitulo{
+	text-align: center;
+}
+
 #principal #contenido div .producto h4 {
 	color: #FFF;
 	font-size: 16px;
