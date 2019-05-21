@@ -6,8 +6,8 @@ if ((isset($_GET['idUsuario'])) && ($_GET['idUsuario'] != "")) {
 	$idUsuario1=$_GET['idUsuario'];
   $deleteSQL = "DELETE FROM tblusuario WHERE idUsuario='$idUsuario1'";
 
-  mysqli_select_db($database_conexionmanzanas, $conexionmanzanas);
-  $Result1 = mysqli_query($deleteSQL, $conexionmanzanas) or die(mysqli_error());
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
 
   $deleteGoTo = "usuarios_lista.php";
   if (isset($_SERVER['QUERY_STRING'])) {
@@ -18,11 +18,11 @@ if ((isset($_GET['idUsuario'])) && ($_GET['idUsuario'] != "")) {
 }
 
 if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
-  $deleteSQL = sprintf("DELETE FROM tblusuario WHERE idUsuario=%s",
-                       GetSQLValueString($_GET['recordID'], "int"));
+	$idUsuario2=$_GET['recordID'];
+  $deleteSQL = "DELETE FROM tblusuario WHERE idUsuario='$idUsuario2'";
 
-  mysql_select_db($database_conexionmanzanas, $conexionmanzanas);
-  $Result1 = mysql_query($deleteSQL, $conexionmanzanas) or die(mysql_error());
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
 
   $deleteGoTo = "usuarios_lista.php";
   if (isset($_SERVER['QUERY_STRING'])) {
@@ -59,9 +59,9 @@ if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">inicio</a></li>
+						<li class="menuH"><a href="#">Inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Computo</a></li>
+						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
 					</ul>			
 				</div>
@@ -82,21 +82,20 @@ if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><h2>Conócenos</h2>
-					<p>Trabajar en Amazon</p>
-					<p>Información corporativa</p>
-					<p>Departamento de prensa</p>
+				<div class="pie1"><a href="nosotrosA.php"><h2>Nosotros</h2></a> 
+					<p>Nuestros valores</p>
+					<p>Nuestra misión</p>
+					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Podemos ayudarte</h2>
-					<p>Devolver o reemplazar productos</p>
-					<p>Gestionar contenido y dispositivos</p>
-					<p>Ayuda</p>
+				<div class="pie1"><h2>Nuestras Políticas</h2>
+					<p>Seguridad </p>
+					<p>Calidad </p>
+					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Métodos de pago</h2>
-				
-					<p>Tarjetas de crédito y débito</p>
-					<p>Tarjetas de regalo</p>
-					<p>Meses sin intereses</p>
+				<div class="pie1"><h2>Contáctanos</h2>
+					<p>Información por correo</p>
+					<p>Servicio de Ayuda</p>
+					
 				</div>
 			</div>
 		</div>

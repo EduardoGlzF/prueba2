@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>Documento sin título</title>
+<title>CompuTec</title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -25,9 +25,9 @@
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">inicio</a></li>
+						<li class="menuH"><a href="#">Inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Computo</a></li>
+						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
 					</ul>			
 				</div>
@@ -45,21 +45,20 @@
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><h2>Conócenos</h2>
-					<p>Trabajar en Amazon</p>
-					<p>Información corporativa</p>
-					<p>Departamento de prensa</p>
+				<div class="pie1"><a href="nosotrosA.php"><h2>Nosotros</h2></a> 
+					<p>Nuestros valores</p>
+					<p>Nuestra misión</p>
+					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Podemos ayudarte</h2>
-					<p>Devolver o reemplazar productos</p>
-					<p>Gestionar contenido y dispositivos</p>
-					<p>Ayuda</p>
+				<div class="pie1"><h2>Nuestras Políticas</h2>
+					<p>Seguridad </p>
+					<p>Calidad </p>
+					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Métodos de pago</h2>
-				
-					<p>Tarjetas de crédito y débito</p>
-					<p>Tarjetas de regalo</p>
-					<p>Meses sin intereses</p>
+				<div class="pie1"><h2>Contáctanos</h2>
+					<p>Información por correo</p>
+					<p>Servicio de Ayuda</p>
+					
 				</div>
 			</div>
 		</div>
