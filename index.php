@@ -40,7 +40,7 @@
 				</div>
 						
 			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
-			<p>Iniciar sesion</p></div>					
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		
@@ -67,7 +67,7 @@
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
