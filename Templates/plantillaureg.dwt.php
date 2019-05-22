@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
 <title>CompuTec</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->encabezadoeditable
-<!-- TemplateEndEditable -->
+
 
 <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
 

@@ -1,14 +1,14 @@
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-<!-- TemplateBeginEditable name="doctitle" -->
+<!-- InstanceBeginEditable name="doctitle" -->
 <title>CompuTec</title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->encabezadoeditable
+<!-- InstanceEndEditable -->
 
-<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css" />  
 
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -21,7 +21,7 @@
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><a href="#"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
+			<div id="logo"><a href="#"><img src="imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
@@ -32,7 +32,7 @@
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="../imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
 			<p>Iniciar sesion</p></div>					
 		
 		 </div>					 		
@@ -40,7 +40,7 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- TemplateBeginEditable name="contenidoeditable" -->contenidoeditable<!-- TemplateEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
@@ -64,4 +64,4 @@
 		</div>
 	</div>
 </body>
-</html>
+<!-- InstanceEnd --></html>
