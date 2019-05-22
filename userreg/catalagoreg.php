@@ -74,7 +74,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 				</div>
 						
 			<div id="login"><a href="#"><img src="../imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
-			<p>Iniciar sesion</p></div>					
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Acerca de nosotros</title>
+<title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" type="text/css" href="../estilos/nosotros_style.css" />  
+	<link rel="stylesheet" type="text/css" href="./estilos/nosotros_style.css" />
 <!-- InstanceEndEditable -->
 
-<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css" />  
 
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -22,7 +22,7 @@
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><a href="#"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
+			<div id="logo"><a href="#"><img src="imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
@@ -33,7 +33,7 @@
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="../imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
 			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
@@ -42,11 +42,10 @@
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			
 			<div id="nosotrosTxt">
 				
 				<h1>¡Bienvenido a CompuTec! </h1>
-				<h2>¿Cómo te podemos ayudar?</h2>
+				<h2>A tu alcance en un click</h2>
 				<br>
 
 	<h2 class="h2nosotros">Nuestra Misión</h2>
@@ -83,13 +82,13 @@ Disfrutar mientras somos los mejores.
 		
 </div>						
 			
-		  <!-- InstanceEndEditable -->
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
