@@ -16,7 +16,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
     $descr = $_POST['strDescripcion'];
 	$imagen = $_POST['strImagen'];
 	
-	$insertSQL = "INSERT INTO tblproducto (strNombre, strSeo, dblPrecio, intEstado, strDescripcion, strImagen) VALUES ('$nombre', '$seo', '$precio', '$estado', '$descr', '$imagen')";
+	$insertSQL = "INSERT INTO tblproducto (strNombre, categoria, dblPrecio, intEstado, strDescripcion, strImagen) VALUES ('$nombre', '$seo', '$precio', '$estado', '$descr', '$imagen')";
                        
 
   mysqli_select_db($conexionbd,$database_conexionbd);
@@ -96,7 +96,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
           </span></td>
         </tr>
         <tr valign="baseline">
-          <td nowrap="nowrap" align="right">Seo:</td>
+          <td nowrap="nowrap" align="right">Categoria:</td>
           <td><span id="sprytextfield2">
             <input name="strSeo" type="text" required="required" value="" size="32" />
           </span></td>
@@ -153,7 +153,8 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotrosA.php"><h2>Nosotros</h2></a> 
+				<div class="pie1">
+				<a href="nosotrosA.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>

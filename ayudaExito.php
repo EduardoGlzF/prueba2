@@ -110,13 +110,13 @@
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
 			
 				<div id="ayudaExitocont">
+					<h2>Su mensaje ha sido reicibido</h2>
 					<bloquote>
-						
+						Su mensaje será analizado por uno de nuestros colaboradores, pronto usted sera contactado por
+						correo para darle solución a sus dudas.<br>
+						<br>										
 						
 					</bloquote>
-					
-					
-					
 				</div>
 			
 			

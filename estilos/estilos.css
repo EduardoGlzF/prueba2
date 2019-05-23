@@ -201,8 +201,22 @@ ul.menuH li{ /*Menu horizontal*/
 }
 
 /*Paginas ayuda exito*/
+#ayudaExitocont{
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-bottom: 140px;
+}
 
+#ayudaExitocont h2{
+	color: #FF8c00;
+	margin-bottom: 40px;
+}
 
+#ayudaExitocont bloquote{
+	margin-top: 20px;
+	font-size: 18px;
+}
 
 .pie1 {
 	/*background-color: #06F;*/
@@ -212,6 +226,7 @@ ul.menuH li{ /*Menu horizontal*/
 	float: center;
 	margin: 10px;
 	padding: 10px;
+	
 }
 
 .pieorden{
@@ -220,7 +235,9 @@ ul.menuH li{ /*Menu horizontal*/
 }
 
 
-
+/*.pie1 a h2{
+	text-decoration: none;
+}*/
 
 
 

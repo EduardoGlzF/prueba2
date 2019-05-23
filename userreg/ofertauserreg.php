@@ -32,19 +32,20 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }
 }
 
-
 mysqli_select_db( $conexionbd, $database_conexionbd);
-$query_Recordset1 = "SELECT * FROM tblproducto where categoria='computo'";
+$query_Recordset1 = "SELECT * FROM tblproducto where categoria='oferta'";
 $Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error());
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 ?>
+
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Documento sin título</title>
+<title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -81,7 +82,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			
+	
 			<div id="h1catalogo"><h1>Catálogo</h1></div>
 						
 				<div class="galeria", align="center">   				 
@@ -97,9 +98,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
        				</div>
       			    <?php } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
    				</div>			
-			
-			
-			<!-- InstanceEndEditable -->
+	
+	<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
@@ -110,7 +110,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
+				<div class="pie1"><h2>Nuestras Políticas</h2>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
@@ -124,6 +124,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
 <?php
 mysqli_free_result($Recordset1);
 ?>
