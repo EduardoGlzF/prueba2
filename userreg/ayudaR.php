@@ -3,15 +3,9 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Inicio</title>
+<title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" type="text/css" href="estilos/slider_style.css"> <!--estilos slider-->
-		  		  	  
-		  <meta name="viewport" content="width = divice-width, 
-         user-scalable=no, initial-scale=1, maximum-scale=1,
-         minima-scale=1"> 
-	
 <!-- InstanceEndEditable -->
 
 <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
@@ -45,20 +39,41 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" --><div class="slider">
-          <ul>
-            <li><a href="slider0.html"><img src="imagenes/slider2.jpg" alt""></a></li>
-            <li><img src="imagenes/slider3.jpg" alt""></li>
-            <li><img src="imagenes/slider4.jpg" alt""></li>
-            <li><img src="imagenes/slider3.jpg" alt""></li>
-          </ul>
-			</div><!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			<div id="cuerpoayuda"> 
+		
+		<div id="formDiv">
+		<div id="tituloAyuda"><h2>Servicio de ayuda</h2></div>
+		 
+			 <form action="ayudaExito.php" method="post">
+          <table align="center">
+            <tr><td>Nombre :</td>
+              <td><input type="text" name="nombre" placeholder="Escribe tu nombre" required></td>
+              <tr/>
+              <tr><td>E-mail:</td>
+                <td><input type="email" name="email" placeholder="Aqui@tucorreo.com" required></td>
+              </tr>
+              <tr><td>Edad:</td>
+                <td><input type="number" name="edad" placeholder="Escribe tu edad" required></td>
+              </tr>
+              <tr><td>Fecha:</td>
+                <td><input type="date" name="fecha" placeholder="Escribe la fecha" required></td>
+              </tr>
+              <tr><td>Mensaje:</td>
+                <td><textarea name="mensaje" rows="8" cols="17" required></textarea></td>
+              </tr>
+              <tr><td><input type="submit" name="boton" value="Enviar"/></td>
+              </tr>
+          </table></form>
+		</div>
+	</div>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
@@ -68,7 +83,7 @@
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><a href="../ayudaR.php"><h2>Contáctanos</h2></a>
+				<div class="pie1"><h2>Contáctanos</h2>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>
