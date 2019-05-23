@@ -137,6 +137,9 @@ ul.menuH li{ /*Menu horizontal*/
 #principal #contenido div #form1 .session {
 	text-align: left;
 }
+
+/*Pagina de catalogo*/
+
 #principal #contenido .producto {
 	background-color: #06F;
 	font-size: 16px;
@@ -176,6 +179,30 @@ ul.menuH li{ /*Menu horizontal*/
 #principal #contenido div .producto {
 	font-size: 16px;
 }
+
+
+/*Paginas ayuda*/
+
+#principal #contenido #cuerpoayuda{
+	display: flex;	
+	text-align: center;
+
+}
+
+#principal #contenido #cuerpoayuda #tituloAyuda{
+	padding-bottom: 20px;
+}
+
+#principal #contenido #cuerpoayuda #formDiv{
+	padding-top: 20px;	
+	padding-bottom: 55px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Paginas ayuda exito*/
+
+
 
 .pie1 {
 	/*background-color: #06F;*/
