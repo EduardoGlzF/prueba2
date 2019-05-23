@@ -1,4 +1,4 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
+<?php require_once('./conexion/conexionbd.php'); ?>
 <?php
 
 if (!function_exists("GetSQLValueString")) {
@@ -29,9 +29,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
       break;
   }
   return $theValue;
-}
-}
-
+}}
 
 mysqli_select_db( $conexionbd, $database_conexionbd);
 $query_Recordset1 = "SELECT * FROM tblproducto where categoria='computo'";
@@ -39,17 +37,20 @@ $Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error()
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 ?>
+
+
+
 <!doctype html>
-<html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Documento sin título</title>
+<title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 
-<link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
+<link rel="stylesheet" type="text/css" href="estilos/estilos.css" />  
 
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -62,7 +63,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><a href="#"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
+			<div id="logo"><a href="#"><img src="imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></a></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
@@ -73,7 +74,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 					</ul>			
 				</div>
 						
-							
+			<div id="login"><a href="acceder.php"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		
@@ -89,15 +91,15 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
        				 <div class="producto"  >
 	   				 	<h4  align="center" > <?php echo $row_Recordset1['strNombre']; ?></h4>
         			 	<h4>        
-         			 		<img src="../imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="270" height="168" /> 
+         			 		<img src="./imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="270" height="168" /> 
            			 		<p>&nbsp;</p>
          			 		<pre> Precio:$<?php echo $row_Recordset1['dblPrecio']; ?></pre>
         			 	</h4>
-        			 	<p><a href="../userreg/ver_producto_reg.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/masinformacion.png" width="265" height="86" /></a></p>
+        			 	<p><a href="./ver_producto.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="./imagenes/masinformacion.png" width="265" height="86" /></a></p>
        				</div>
       			    <?php } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
-   				</div>			
-			
+   				</div>		
+   				
 			
 			<!-- InstanceEndEditable -->
 		</div><br>
@@ -105,12 +107,12 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
+				<div class="pie1"><h2>Nuestras Políticas</h2>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>

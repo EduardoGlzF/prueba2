@@ -103,7 +103,8 @@ if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotrosA.php"><h2>Nosotros</h2></a> 
+				<div class="pie1">
+				<a href="nosotrosA.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>

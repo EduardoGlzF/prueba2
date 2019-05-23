@@ -33,7 +33,7 @@
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<div id="login"><a href="acceder.php"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
 			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
@@ -93,12 +93,12 @@ Disfrutar mientras somos los mejores.
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+				<div class="pie1"><a href="ayuda.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>
