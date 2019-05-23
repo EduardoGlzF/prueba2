@@ -32,7 +32,7 @@ function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDe
 }}
 
 mysqli_select_db( $conexionbd, $database_conexionbd);
-$query_Recordset1 = "SELECT * FROM tblproducto where categoria='computo'";
+$query_Recordset1 = "SELECT * FROM tblproducto where categoria='telefonia'";
 $Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error());
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);

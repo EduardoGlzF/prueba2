@@ -10,7 +10,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
   	$nombre = $_POST['strNombre'];
-    $seo = $_POST['strSeo'];
+    $seo = $_POST['categoria'];
     $precio = $_POST['dblPrecio'];
     $estado = $_POST['intEstado'];
     $descr = $_POST['strDescripcion'];
@@ -98,7 +98,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Categoria:</td>
           <td><span id="sprytextfield2">
-            <input name="strSeo" type="text" required="required" value="" size="32" />
+            <input name="categoria" type="text" required="required" value="" size="32" />
           </span></td>
         </tr>
         <tr valign="baseline">
