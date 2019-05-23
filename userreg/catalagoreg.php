@@ -93,7 +93,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
            			 		<p>&nbsp;</p>
          			 		<pre> Precio:$<?php echo $row_Recordset1['dblPrecio']; ?></pre>
         			 	</h4>
-        			 	<p><a href="../ver_producto.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/masinformacion.png" width="265" height="86" /></a></p>
+        			 	<p><a href="../userreg/ver_producto_reg.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/masinformacion.png" width="265" height="86" /></a></p>
        				</div>
       			    <?php } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
    				</div>			
