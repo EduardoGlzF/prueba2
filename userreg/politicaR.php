@@ -6,6 +6,7 @@
 <title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
+	<link rel="stylesheet" type="text/css" href="../estilos/politicas.css" /> 
 <!-- InstanceEndEditable -->
 
 <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
@@ -39,7 +40,19 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			<div id="politicaTxt">
+			<h2>Nuestras Políticas</h2>
+			<br>
+			<h5 class="h5politica">Políticas de Seguridad</h5> 
+			<bloquote class="politicaBq">Este sitio es avalado por la ISO 27000, la cual contiene un conjunto de buenas prácticas para el establecimiento, implementación, mantenimiento y mejora de Sistemas de Gestión de la Seguridad de la Información. </bloquote>
+			<br> 
+			<h5 class="h5politica">Política de Devoluciones</h5> 
+			<bloquote class="politicaBq">Si el producto ordenado no llega en un período de 15 días hábiles, el cliente deberá informarlo mediante un correo en la sección de Contáctanos</bloquote> 
+			<br> 
+			</div>
+			
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
