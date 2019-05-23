@@ -18,7 +18,7 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
 	$imagen = $_POST['strImagen'];
 	$idproducto = $_POST['idProductos'];
 	
-	$updateSQL = "UPDATE tblproducto SET strNombre='$nombre', strSeo='$seo', dblPrecio='$precio', intEstado='$estado', strDescripcion='$descr', strImagen='$imagen' WHERE idProductos='$idproducto'";
+	$updateSQL = "UPDATE tblproducto SET strNombre='$nombre', categoria='$seo', dblPrecio='$precio', intEstado='$estado', strDescripcion='$descr', strImagen='$imagen' WHERE idProductos='$idproducto'";
                        
 
   mysqli_select_db( $conexionbd,$database_conexionbd);
@@ -117,8 +117,8 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
           <td><input type="text" name="strNombre" value="<?php echo htmlentities($row_datosproductos['strNombre'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
         </tr>
         <tr valign="baseline">
-          <td nowrap="nowrap" align="right">Seo:</td>
-          <td><input type="text" name="strSeo" value="<?php echo htmlentities($row_datosproductos['strSeo'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
+          <td nowrap="nowrap" align="right">Categoria:</td>
+          <td><input type="text" name="strSeo" value="<?php echo htmlentities($row_datosproductos['categoria'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" /></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Precio:</td>
@@ -157,7 +157,8 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotrosA.php"><h2>Nosotros</h2></a> 
+				<div class="pie1">
+				<a href="nosotrosA.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
