@@ -1,3 +1,26 @@
+<?php require_once('../conexion/conexionbd.php'); ?>
+
+<?php 
+$editFormAction = $_SERVER['PHP_SELF'];
+if (isset($_SERVER['QUERY_STRING'])) {
+  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
+}
+
+	$user=$_SESSION['MM_IdUsuario'];
+	$recor_id=$_GET['recordID'];
+  $insertSQL = "INSERT INTO tblcarrito (idUsuario, idProducto, cantidad) VALUES (%s, %s, %s)";
+
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$insertSQL) or die(mysqli_error());
+
+  $insertGoTo = "../carrito_lista.php";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
+    $insertGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $insertGoTo));
+
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -39,7 +62,11 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			<div align="center">
+      <h1>A&ntilde;adiendo producto al carrito........</h1>
+      <p>&nbsp;</p>
+    </div><!-- InstanceEndEditable -->
 		</div><br>
 		
 		
