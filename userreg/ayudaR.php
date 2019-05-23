@@ -1,26 +1,3 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
-
-<?php 
-$editFormAction = $_SERVER['PHP_SELF'];
-if (isset($_SERVER['QUERY_STRING'])) {
-  $editFormAction .= "?" . htmlentities($_SERVER['QUERY_STRING']);
-}
-
-	$user=$_SESSION['MM_IdUsuario'];
-	$recor_id=$_GET['recordID'];
-  $insertSQL = "INSERT INTO tblcarrito (idUsuario, idProducto, cantidad) VALUES (%s, %s, %s)";
-
-  mysqli_select_db($conexionbd,$database_conexionbd);
-  $Result1 = mysqli_query($conexionbd,$insertSQL) or die(mysqli_error());
-
-  $insertGoTo = "../carrito_lista.php";
-  if (isset($_SERVER['QUERY_STRING'])) {
-    $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
-    $insertGoTo .= $_SERVER['QUERY_STRING'];
-  }
-  header(sprintf("Location: %s", $insertGoTo));
-
-?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -63,10 +40,34 @@ if (isset($_SERVER['QUERY_STRING'])) {
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			<div align="center">
-      <h1>A&ntilde;adiendo producto al carrito........</h1>
-      <p>&nbsp;</p>
-    </div><!-- InstanceEndEditable -->
+			<div id="cuerpoayuda"> 
+		
+		<div id="formDiv">
+		<div id="tituloAyuda"><h2>Servicio de ayuda</h2></div>
+		 
+			 <form action="ayudaExito.php" method="post">
+          <table align="center">
+            <tr><td>Nombre :</td>
+              <td><input type="text" name="nombre" placeholder="Escribe tu nombre" required></td>
+              <tr/>
+              <tr><td>E-mail:</td>
+                <td><input type="email" name="email" placeholder="Aqui@tucorreo.com" required></td>
+              </tr>
+              <tr><td>Edad:</td>
+                <td><input type="number" name="edad" placeholder="Escribe tu edad" required></td>
+              </tr>
+              <tr><td>Fecha:</td>
+                <td><input type="date" name="fecha" placeholder="Escribe la fecha" required></td>
+              </tr>
+              <tr><td>Mensaje:</td>
+                <td><textarea name="mensaje" rows="8" cols="17" required></textarea></td>
+              </tr>
+              <tr><td><input type="submit" name="boton" value="Enviar"/></td>
+              </tr>
+          </table></form>
+		</div>
+	</div>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
@@ -77,7 +78,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
