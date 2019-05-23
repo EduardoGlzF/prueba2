@@ -37,8 +37,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Documento sin título</title>
-	<script src="../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
-<link href="../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
+	
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 	<!-- InstanceEndEditable -->
@@ -56,14 +55,17 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec" /></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
+						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
+						
 					</ul>			
 				</div>
 							
@@ -90,27 +92,31 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Nombre:</td>
           <td><span id="sprytextfield1">
-            <input type="text" name="strNombre" value="" size="32" />
-          <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+            <input name="strNombre" type="text" required="required" value="" size="32" />
+          </span></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Seo:</td>
           <td><span id="sprytextfield2">
-            <input type="text" name="strSeo" value="" size="32" />
-          <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+            <input name="strSeo" type="text" required="required" value="" size="32" />
+          </span></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Precio:</td>
           <td><span id="sprytextfield3">
-            <input type="text" name="dblPrecio" value="" size="32" />
-          <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+            <input name="dblPrecio" type="text" required="required" value="" size="32" />
+          </span></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Imagen:</td>
-          <td><label for="strImagen"></label>
+          <td><p>
+            <label for="strImagen"></label>
             <span id="sprytextfield4">
-            <input type="text" name="strImagen" id="strImagen" />
-          <span class="textfieldRequiredMsg">Necesario.</span></span>            <input type="button" name="button" id="button" value="Subir imagen" onclick="javascrip:subirimagen();"=/></td>
+              <input name="strImagen" type="text" required="required" id="strImagen" />
+            </span></p>
+            <p>
+              <input type="button" name="button" id="button" value="Subir imagen" onclick="javascrip:subirimagen();"=/>
+          </p></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Estado:</td>
@@ -122,8 +128,8 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Descripcion:</td>
           <td><span id="sprytextfield5">
-            <input name="strDescripcion" type="text" value="" size="32" />
-          <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+            <input name="strDescripcion" type="text" required="required" value="" size="32" />
+          </span></td>
         </tr>
         <tr valign="baseline">
           <td height="48" align="right" nowrap="nowrap">&nbsp;</td>
@@ -134,13 +140,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
     </form>
     <p>&nbsp;</p>
 <p>&nbsp;</p>
-    <script type="text/javascript">
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "none");
-var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
-var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
-var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
-var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
-    </script>
+    
 			
 			
 			

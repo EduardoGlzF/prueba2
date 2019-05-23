@@ -1,4 +1,4 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
+<?php require_once('./conexion/conexionbd.php'); ?>
 <?php
 // *** Validate request to login to this site.
  
@@ -45,9 +45,9 @@ if (isset($_POST['strEmail'])) {
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>CompuTec</title>
+<title>Email repetido</title>
 <!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" --><title>Email repetido</title>
+<!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
 
 <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />  
@@ -75,20 +75,26 @@ if (isset($_POST['strEmail'])) {
 				</div>
 						
 			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
-			<p>Iniciar sesion</p></div>					
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			<div align="center">
+     			<h1>Email repetido</h1>
+     			<p>Porfavor ingresar otro e-mail</p>
+     			<p><a href="registrarse.php">atras</a></p>
+   			</div>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>

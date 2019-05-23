@@ -1,36 +1,7 @@
 <?php require_once('../conexion/conexionbd.php'); ?>
 <?php
 
-if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
-{
-  if (PHP_VERSION < 6) {
-    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
-  }
 
-  $theValue = function_exists("mysql_real_escape_string") ? mysqli_real_escape_string($theValue) : mysqli_escape_string($theValue);
-
-  switch ($theType) {
-    case "text":
-      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;    
-    case "long":
-    case "int":
-      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
-      break;
-    case "double":
-      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
-      break;
-    case "date":
-      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;
-    case "defined":
-      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
-      break;
-  }
-  return $theValue;
-}
-}
 
 $maxRows_Recordset1 = 10;
 $pageNum_Recordset1 = 0;
@@ -96,14 +67,17 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec" /></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
+						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
+						
 					</ul>			
 				</div>
 							

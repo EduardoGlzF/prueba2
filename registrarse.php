@@ -84,7 +84,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
 				</div>
 						
 			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
-			<p>Iniciar sesion</p></div>					
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		
@@ -100,32 +100,32 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">Nombre:</td>
            <td><span id="sprytextfield1">
-             <input type="text" name="strNombre" value="" size="32" />
-            <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+             <input name="strNombre" type="text" required="required" value="" size="32" />
+           </span></td>
           </tr>
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">Email:</td>
            <td><span id="sprytextfield2">
-           <input type="text" name="strEmail" value="" size="32" />
-           <span class="textfieldRequiredMsg">Necesario.</span><span class="textfieldInvalidFormatMsg">Formato no válido.</span></span></td>
+           <input name="strEmail" type="text" required="required" value="" size="32" />
+           </span></td>
           </tr>
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">Telefono:</td>
            <td><span id="sprytextfield3">
-           <input type="text" name="intTelefono" value="" size="32" />
-           <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+           <input name="intTelefono" type="text" required="required" value="" size="32" />
+           </span></td>
           </tr>
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">Direccion:</td>
            <td><span id="sprytextfield4">
-             <input type="text" name="strDirccion" value="" size="32" />
-            <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+             <input name="strDirccion" type="text" required="required" value="" size="32" />
+           </span></td>
           </tr>
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">Contraseña:</td>
            <td><span id="sprytextfield5">
-             <input type="password" name="strContrasea" value="" size="32" />
-            <span class="textfieldRequiredMsg">Necesario.</span></span></td>
+             <input name="strContrasea" type="password" required="required" value="" size="32" />
+           </span></td>
           </tr>
          <tr valign="baseline">
            <td nowrap="nowrap" align="right">&nbsp;</td>
@@ -138,19 +138,13 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
       </form>
      <p>&nbsp;</p>
    </div>
-   <script type="text/javascript">
-var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
-var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
-var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3", "none");
-var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
-var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
-   </script><!-- InstanceEndEditable -->
+  <!-- InstanceEndEditable -->
 		</div><br>
 		
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>

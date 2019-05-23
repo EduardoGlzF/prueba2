@@ -63,14 +63,17 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	
 	<div id="principal">	
 		<div id="cabecera">		
-			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec"/></div> 
+			<div id="logo"><img src="../imagenes/compuTec.png" width="90" height="80" alt="logoCompuTec" /></div> 
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
 						<li class="menuH"><a href="#">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
+						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
+						
 					</ul>			
 				</div>
 							

@@ -1,58 +1,9 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
-<?php
-  
-
-if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
-	$idproducto1 = $_GET['idProductos'];
-  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto1'";
-
-  mysqli_select_db($conexionbd,$database_conexionbd);
-  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
-
-  $deleteGoTo = "listaproducto.php";
-  if (isset($_SERVER['QUERY_STRING'])) {
-    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
-    $deleteGoTo .= $_SERVER['QUERY_STRING'];
-  }
-  header(sprintf("Location: %s", $deleteGoTo));
-}
-
-if ((isset($_GET['idProductos'])) && ($_GET['idProductos'] != "")) {
-	$idproducto2 = $_GET['idProductos'];
-  $deleteSQL = "DELETE FROM tblproducto WHERE idProductos='idproducto2'";
-
-  mysqli_select_db($conexionbd,$database_conexionbd);
-  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
-
-  $deleteGoTo = "listaproducto.php";
-  if (isset($_SERVER['QUERY_STRING'])) {
-    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
-    $deleteGoTo .= $_SERVER['QUERY_STRING'];
-  }
-  header(sprintf("Location: %s", $deleteGoTo));
-}
-
-if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
-	$idproducto = $_GET['recordID'];	
-  $deleteSQL = sprintf("DELETE FROM tblproducto WHERE idProductos=%s",$idproducto);
-
-  mysqli_select_db($conexionbd,$database_conexionbd);
-  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
-
-  $deleteGoTo = "listaproducto.php";
-  if (isset($_SERVER['QUERY_STRING'])) {
-    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
-    $deleteGoTo .= $_SERVER['QUERY_STRING'];
-  }
-  header(sprintf("Location: %s", $deleteGoTo));
-}
-?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaadmin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Documento sin título</title>
+<title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -91,13 +42,7 @@ if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			<div align="center">
-     			 <h1>Eliminando Producto</h1>
-      			 <p>Eliminando..........</p>
-      			 <p>&nbsp;</p>
-    		</div>
-			<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
