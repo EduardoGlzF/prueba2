@@ -1,9 +1,57 @@
+<?php require_once('./conexion/conexionbd.php'); ?>
+
+<?php
+// *** Validate request to login to this site.
+if (!isset($_SESSION)) {
+  session_start();
+}
+
+$loginFormAction = $_SERVER['PHP_SELF'];
+if (isset($_GET['accesscheck'])) {
+  $_SESSION['PrevUrl'] = $_GET['accesscheck'];
+}
+
+if (isset($_POST['strEmail'])) {
+  $loginUsername=$_POST['strEmail'];
+  $password=$_POST['strContraseña'];
+  $MM_fldUserAuthorization = "intPrivilegio";
+  $MM_redirectLoginSuccess = "userreg/index.php";
+  $MM_redirectLoginFailed = "error_ini.php";
+  $MM_redirecttoReferrer = false;
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  	$user=$loginUsername;
+	$pass=$password;
+  $LoginRS__query="SELECT idUsuario, strEmail, strContrasena, intPrivilegio FROM tblusuario WHERE strEmail='$user' AND strContrasena='$pass'"; 
+   
+  $LoginRS = mysqli_query($conexionbd,$LoginRS__query) or die(mysqli_error());
+  $row_LoginRS = mysqli_fetch_assoc($LoginRS);
+  $loginFoundUser = mysqli_num_rows($LoginRS);
+  if ($loginFoundUser) {
+    
+    $loginStrGroup  = mysqli_fetch_row ($LoginRS,0,'intPrivilegio');
+    
+	if (PHP_VERSION >= 5.1) {session_regenerate_id(true);} else {session_regenerate_id();}
+    //declare two session variables and assign them
+    $_SESSION['MM_Username'] = $loginUsername;
+    $_SESSION['MM_UserGroup'] = $loginStrGroup;	      
+    $_SESSION['MM_IdUsuario'] = $row_LoginRS["idUsuario"];
+	
+    if (isset($_SESSION['PrevUrl']) && false) {
+      $MM_redirectLoginSuccess = $_SESSION['PrevUrl'];	
+    }
+    header("Location: " . $MM_redirectLoginSuccess );
+  }
+  else {
+    header("Location: ". $MM_redirectLoginFailed );
+  }
+}
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>CompuTec</title>
+<title>Acceder</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -32,7 +80,7 @@
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<div id="login"><a href="acceder.php"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
 			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
@@ -40,7 +88,39 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->
+			<div align="center">
+     <h1>Iniciar sesion: </h1>
+     <form id="form1" name="form1" method="POST" action="<?php echo $loginFormAction; ?>">
+       <div align="justify"></div>
+       <table align="center">
+         <tr valign="baseline">
+           <td nowrap="nowrap" align="right">
+             <p class="session"> E-mail:      
+               <label for="strEmail"></label>
+               <input name="strEmail" type="text" required="required" id="strEmail" align="right" />
+               <br /> 
+  </td></tr>
+  <tr valign="baseline">
+  <td nowrap="nowrap" align="right">Contrase&ntilde;a:
+    <label for="strContrase&ntilde;a"></label>
+    <span id="sprytextfield4">
+    <input name="strContrase&ntilde;a" type="password" required="required" id="strContrase&ntilde;a" />
+    </span>
+    </p>
+    <p>
+      <input type="submit" name="button" id="button" value="Iniciar sesion" />
+      </p>
+    <p><a href="registrarse.php">Regristrarse.</a></p>
+    </td>
+    </tr>
+    </table>
+      </form>
+     <p>&nbsp;</p>
+   </div>
+			
+			
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		

@@ -74,7 +74,7 @@ if (isset($_POST['strEmail'])) {
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<div id="login"><a href="acceder.php"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
 			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
