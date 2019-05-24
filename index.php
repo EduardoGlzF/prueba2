@@ -51,10 +51,10 @@
 			
 			<div class="slider">
           <ul>
-            <li><a href="slider0.html"><img src="../imagenes/slider2.jpg" alt""></a></li>
-            <li><img src="../imagenes/slider3.jpg" alt""></li>
-            <li><img src="../imagenes/slider4.jpg" alt""></li>
-            <li><img src="../magenes/slider3.jpg" alt""></li>
+            <li><a href="slider0.html"><img src="./imagenes/slider2.jpg" alt""></a></li>
+            <li><img src="./imagenes/slider3.jpg" alt""></li>
+            <li><img src="./imagenes/slider4.jpg" alt""></li>
+            <li><img src="./imagenes/slider3.jpg" alt""></li>
           </ul>
 			</div>
 			
