@@ -8,12 +8,12 @@ if (isset($_SERVER['QUERY_STRING'])) {
 
 	$user=$_SESSION['MM_IdUsuario'];
 	$recor_id=$_GET['recordID'];
-  $insertSQL = "INSERT INTO tblcarrito (idUsuario, idProducto, cantidad) VALUES (%s, %s, %s)";
+  $insertSQL = "INSERT INTO tblcarrito (idUsuario, idProducto, cantidad) VALUES ('$user', '$recor_id', '1')";
 
   mysqli_select_db($conexionbd,$database_conexionbd);
   $Result1 = mysqli_query($conexionbd,$insertSQL) or die(mysqli_error());
 
-  $insertGoTo = "../carrito_lista.php";
+  $insertGoTo = "../userreg/carrito_lista.php";
   if (isset($_SERVER['QUERY_STRING'])) {
     $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
     $insertGoTo .= $_SERVER['QUERY_STRING'];
