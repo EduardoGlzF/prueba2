@@ -67,10 +67,11 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./telefoniauser.php">Telefonía</a></li>
+						<li class="menuH"><a href="./computouser.php">Cómputo</a></li>
+						<li class="menuH"><a href="./ofertauser.php">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
@@ -112,12 +113,12 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+				<div class="pie1"><a href="ayuda.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>

@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -28,14 +26,15 @@
 				<div id="menuHorizontal">
 					<ul class="menuH">
 						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
+						<li class="menuH"><a href="telefoniauser.php">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
-			<div id="login"><a href="#"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
-			<p>Iniciar sesion</p></div>					
+			<div id="login"><a href="acceder.php"><img src="imagenes/loginPng.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Iniciar sesión</p></div>					
 		
 		 </div>					 		
 			 		 		 		
@@ -46,7 +45,7 @@
 	<div id="cuerpoayuda"> 
 		
 		<div id="formDiv">
-		<div id="tituloAyuda"><h2>Servicio de ayuda</h2></div>
+		<div id="tituloAyuda"><h2>Servicio de Ayuda</h2></div>
 		 
 			 <form action="ayudaExito.php" method="post">
           <table align="center">
@@ -76,17 +75,17 @@
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+				<div class="pie1"><a href="ayuda.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>

@@ -105,17 +105,17 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="../nosotros.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+				<div class="pie1"><a href="../ayudaR.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>
