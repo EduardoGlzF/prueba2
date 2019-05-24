@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 23-05-2019 a las 21:56:58
+-- Tiempo de generación: 24-05-2019 a las 06:51:40
 -- Versión del servidor: 5.7.24
 -- Versión de PHP: 7.2.14
 
@@ -21,6 +21,21 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `computec`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tblcarrito`
+--
+
+DROP TABLE IF EXISTS `tblcarrito`;
+CREATE TABLE IF NOT EXISTS `tblcarrito` (
+  `idcarrito` int(11) NOT NULL AUTO_INCREMENT,
+  `idUsuario` int(11) NOT NULL,
+  `idProducto` int(11) NOT NULL,
+  `cantidad` int(11) NOT NULL,
+  PRIMARY KEY (`idcarrito`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
 
 -- --------------------------------------------------------
 
@@ -84,7 +99,7 @@ CREATE TABLE IF NOT EXISTS `tblusuario` (
 --
 
 INSERT INTO `tblusuario` (`idUsuario`, `strNombre`, `strEmail`, `intActivo`, `intTelefono`, `intPrivilegio`, `strDirccion`, `strContrasena`) VALUES
-(1, 'Jorge Eduardo Villda Walle', 'jorgev537@gmail.com', 1, 899153856, 0, '1', 'jorge123');
+(1, 'jorge', 'jorgev537@gmail.com', 1, 899153856, 0, '1', 'jorge');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

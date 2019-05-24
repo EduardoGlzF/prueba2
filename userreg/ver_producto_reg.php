@@ -47,7 +47,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 					</ul>			
 				</div>
 						
-							
+								
 		
 		 </div>					 		
 			 		 		 		

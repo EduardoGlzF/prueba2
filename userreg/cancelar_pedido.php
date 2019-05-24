@@ -1,12 +1,44 @@
+<?php require_once('../conexion/conexionbd.php'); ?>
+<?php
+if ((isset($_GET['idcarrito'])) && ($_GET['idcarrito'] != "")) {
+	$idcar=$_GET['idcarrito'];
+  $deleteSQL = "DELETE FROM tblcarrito WHERE idcarrito='$idcar'";
+
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
+
+  $deleteGoTo = "../userreg/carrito_lista.php";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
+    $deleteGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $deleteGoTo));
+}
+
+if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
+	$idcar1=$_GET['recordID'];
+  $deleteSQL = "DELETE FROM tblcarrito WHERE idcarrito='$idcar1'";
+
+  mysqli_select_db($conexionbd,$database_conexionbd);
+  $Result1 = mysqli_query($conexionbd,$deleteSQL) or die(mysqli_error());
+  $deleteGoTo = "../userreg/carrito_lista.php";
+  if (isset($_SERVER['QUERY_STRING'])) {
+    $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
+    $deleteGoTo .= $_SERVER['QUERY_STRING'];
+  }
+  header(sprintf("Location: %s", $deleteGoTo));
+}
+?>
+
 <!doctype html>
-<html>
+<html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
-<!-- TemplateBeginEditable name="doctitle" -->
+<!-- InstanceBeginEditable name="doctitle" -->
 <title>CompuTec </title>
-<!-- TemplateEndEditable -->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
 
 <link rel="stylesheet" type="text/css" href="../estilos/estilos.css" />  
 
@@ -39,7 +71,7 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- TemplateBeginEditable name="contenidoeditable" -->contenidoeditable<!-- TemplateEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->Cancelando pedido....<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
@@ -63,4 +95,4 @@
 		</div>
 	</div>
 </body>
-</html>
+<!-- InstanceEnd --></html>

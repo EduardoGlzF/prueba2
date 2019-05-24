@@ -1,3 +1,7 @@
+<?php require_once('../conexion/conexionbd.php'); ?>
+<?php 
+include("../funciones.php")
+?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -38,7 +42,7 @@
 					</ul>			
 				</div>
 						
-							
+								
 		
 		 </div>					 		
 			 		 		 		

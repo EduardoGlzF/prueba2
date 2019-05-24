@@ -62,7 +62,7 @@ $totalRows_datoscarrito = mysqli_num_rows($datoscarrito);
 					</ul>			
 				</div>
 						
-							
+								
 		
 		 </div>					 		
 			 		 		 		
@@ -85,7 +85,7 @@ $totalRows_datoscarrito = mysqli_num_rows($datoscarrito);
             <td><?php echo ObtenerNombreProducto($row_datoscarrito['idProducto']); ?></td>
             <td><?php echo $row_datoscarrito['cantidad']; ?></td>
             <td>$<?php echo ObtenerPrecioProducto($row_datoscarrito['idProducto']); ?></td>
-            <td><a href="../admin/cancelar_pedido.php?recordID=<?php echo $row_datoscarrito['idcarrito']; ?>">Cancelar pedido</a></td>
+            <td><a href="../userreg/cancelar_pedido.php?recordID=<?php echo $row_datoscarrito['idcarrito']; ?>">Cancelar pedido</a></td>
           </tr>
          	
           <?php } while ($row_datoscarrito = mysqli_fetch_assoc($datoscarrito)); ?>
