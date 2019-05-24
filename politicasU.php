@@ -6,7 +6,7 @@
 <title>CompuTec</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" type="text/css" href="../estilos/politicas.css" /> 
+	<link rel="stylesheet" type="text/css" href="./estilos/politicas.css" /> 
 <!-- InstanceEndEditable -->
 
 <link rel="stylesheet" type="text/css" href="estilos/estilos.css" />  
@@ -26,10 +26,11 @@
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./telefoniauser.php">Telefonía</a></li>
+						<li class="menuH"><a href="./computouser.php">Cómputo</a></li>
+						<li class="menuH"><a href="./ofertauser.php">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
@@ -48,9 +49,12 @@
 			<h5 class="h5politica">Políticas de Seguridad</h5> 
 			<bloquote class="politicaBq">Este sitio es avalado por la ISO 27000, la cual contiene un conjunto de buenas prácticas para el establecimiento, implementación, mantenimiento y mejora de Sistemas de Gestión de la Seguridad de la Información. </bloquote>
 			<br> 
+				<br>
 			<h5 class="h5politica">Política de Devoluciones</h5> 
 			<bloquote class="politicaBq">Si el producto ordenado no llega en un período de 15 días hábiles, el cliente deberá informarlo mediante un correo en la sección de Contáctanos</bloquote> 
 			<br> 
+			<img src="./imagenes/poli.png" align="right" height="450";
+width="430">
 			</div>
 			<!-- InstanceEndEditable -->
 		</div><br>

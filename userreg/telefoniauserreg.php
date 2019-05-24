@@ -66,10 +66,10 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./telefoniauserreg.php">Telefonía</a></li>
+						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
+						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
 				</div>
 						
@@ -83,7 +83,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
 			
 				
-			<div id="h1catalogo"><h1>Catálogo</h1></div>
+			<div id="h1catalogo"><h1>Telefonía</h1></div>
 						
 				<div class="galeria", align="center">   				 
      				 <?php do { ?>
@@ -105,17 +105,29 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
+<<<<<<< HEAD
+				<div class="pie1"><a href="./nosotros.php"><h2>Nosotros</h2></a> 
+=======
+				<div class="pie1"><a href="../nosotros.php"><h2>Nosotros</h2></a> 
+>>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+<<<<<<< HEAD
+				<div class="pie1"><a href="./politicaR.php"><h2>Nuestras Políticas</h2></a>
+=======
+				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
+>>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+<<<<<<< HEAD
+				<div class="pie1"><a href="./ayudaR.php"><h2>Contáctanos</h2></a>
+=======
+				<div class="pie1"><a href="../ayudaR.php"><h2>Contáctanos</h2></a>
+>>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>
