@@ -1,4 +1,4 @@
-<?php require_once('../conexion/conexionbd.php'); ?>
+<?php require_once('./conexion/conexionbd.php'); ?>
 <?php
 
 
@@ -60,15 +60,15 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			
 			<div align="center">
       <h1><?php echo $row_Recordset1['strNombre']; ?> </h1>
-      <p><img src="../imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="456" height="412" align="left" /></p>
+      <p><img src="./imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="456" height="412" align="left" /></p>
       <h5>Descripcion:<br />
      
       <p><?php echo $row_Recordset1['strDescripcion']; ?></p>
       
       <h5>Precio: $<?php echo $row_Recordset1['dblPrecio']; ?></h5>
       <p>&nbsp;</p>
-      <p><a href="carrito_add.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/orange_ordernow.png" width="392" height="130" /></a></p>
-      <p><a href="catalagoreg.php"><img src="../imagenes/1359958110498699254boton-atras.png" width="447" height="148" /></a></p>
+      <p><a href="../userreg/carrito_add.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="./imagenes/orange_ordernow.png" width="392" height="130" /></a></p>
+      <p><a href="catalagoreg.php"><img src="./imagenes/1359958110498699254boton-atras.png" width="447" height="148" /></a></p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
