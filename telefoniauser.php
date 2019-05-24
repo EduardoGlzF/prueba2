@@ -83,7 +83,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
 			
-			<div id="h1catalogo"><h1>Catálogo</h1></div>
+			<div id="h1catalogo"><h1>Telefonía</h1></div>
 						
 				<div class="galeria", align="center">   				 
      				 <?php do { ?>
@@ -110,12 +110,12 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><h2>Nuestras Políticas</h2>
+				<div class="pie1"><a href="politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><h2>Contáctanos</h2>
+				<div class="pie1"><a href="ayuda.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>

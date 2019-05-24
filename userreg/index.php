@@ -6,7 +6,7 @@
 <title>Inicio</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
-	<link rel="stylesheet" type="text/css" href="estilos/slider_style.css"> <!--estilos slider-->
+	<link rel="stylesheet" type="text/css" href="../estilos/slider_style.css"> <!--estilos slider-->
 		  		  	  
 		  <meta name="viewport" content="width = divice-width, 
          user-scalable=no, initial-scale=1, maximum-scale=1,
@@ -31,10 +31,10 @@
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./telefoniauserreg.php">Telefonía</a></li>
+						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
+						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
 				</div>
 						
@@ -47,10 +47,10 @@
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" --><div class="slider">
           <ul>
-            <li><a href="slider0.html"><img src="imagenes/slider2.jpg" alt""></a></li>
-            <li><img src="imagenes/slider3.jpg" alt""></li>
-            <li><img src="imagenes/slider4.jpg" alt""></li>
-            <li><img src="imagenes/slider3.jpg" alt""></li>
+            <li><a href="slider0.html"><img src="../imagenes/slider2.jpg" alt""></a></li>
+            <li><img src="../imagenes/slider3.jpg" alt""></li>
+            <li><img src="../imagenes/slider4.jpg" alt""></li>
+            <li><img src="../imagenes/slider3.jpg" alt""></li>
           </ul>
 			</div><!-- InstanceEndEditable -->
 		</div><br>
@@ -58,17 +58,17 @@
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-				<div class="pie1"><a href="../nosotros.php"><h2>Nosotros</h2></a> 
+				<div class="pie1"><a href="./nosotros.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
+				<div class="pie1"><a href="./politicaR.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-				<div class="pie1"><a href="../ayudaR.php"><h2>Contáctanos</h2></a>
+				<div class="pie1"><a href="./ayudaR.php"><h2>Contáctanos</h2></a>
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>
