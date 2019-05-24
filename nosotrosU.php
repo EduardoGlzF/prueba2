@@ -27,9 +27,10 @@
 				<div id="menuHorizontal">
 					<ul class="menuH">
 						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
+						<li class="menuH"><a href="telefoniauser.php">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
@@ -50,33 +51,27 @@
 
 	<h2 class="h2nosotros">Nuestra Misión</h2>
 	<bloquote class="nosotrosBq">Impulsamos el potencial humano y ayudamos a las familias mexicanas a mejorar y empoderar sus vidas a través de la tecnología.</bloquote>
+				<br>
 	
 
 	<h2 class="h2nosotros">Nuestros Valores</h2>	
 <bloquote class="nosotrosBq">	
-Aprender de los retos y de los cambios.
-Mostrar respeto, humildad e integridad.
-Liberar el potencial de nuestra gente.
-Disfrutar mientras somos los mejores.
+Aprender de los retos y de los cambios.<br>
+Mostrar respeto, humildad e integridad.<br>
+Liberar el potencial de nuestra gente.<br>
+Disfrutar mientras somos los mejores.<br>
 </bloquote>
-
-
+<br>
 
 	<h2 class="h2nosotros">Nuestra Filosofía</h2>	
-<bluquote class="nosotrosBq">Creemos en satisfacer las necesidades únicas de los clientes, de principio a fin. Creemos en motivar a cada empleado para que contribuya con sus ideas y experiencias en el servicio a clientes. Nos esforzamos en tratar a los clientes como únicos y en honrar sus diferencias como grupos e individuos.</bluquote>
+<bloquote class="nosotrosBq">Creemos en satisfacer las necesidades únicas de los clientes, de principio a fin. Nos esforzamos en tratar a los clientes como únicos y en honrar sus diferencias como grupos e individuos.</bloquote>
+				<br>
 
 <h2 class="h2nosotros">	Nuestra Esencia</h2>
 			
 		<bloquote class="nosotrosBq">
 		Una creencia fundamental en comprender y aprovechar las fortalezas únicas del individuo, es proveer una experiencia extraordinaria a los clientes y empleados.
 
-		Diversidad e Inclusión
-		Somos un empleador comprometido con la No Discriminación dentro de nuestros espacios de trabajo.
-
-		CompuTec no discrimina por motivos de edad, sexo, raza, color, credo, etnia, orientación sexual, identidad de género, nacionalidad, discapacidad, estado civil, religión, o cualquier otra forma de discriminación que esté prohibida por la legislación local.
-		Reconocemos que todas éstas características son importantes para formar una fuerza laboral diversa.
-				
-	
 		</bloquote>
 		
 		

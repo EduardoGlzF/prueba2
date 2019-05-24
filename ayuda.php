@@ -26,9 +26,10 @@
 				<div id="menuHorizontal">
 					<ul class="menuH">
 						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
+						<li class="menuH"><a href="telefoniauser.php">Telefonía</a></li>
 						<li class="menuH"><a href="#">Cómputo</a></li>
 						<li class="menuH"><a href="#">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
@@ -44,7 +45,7 @@
 	<div id="cuerpoayuda"> 
 		
 		<div id="formDiv">
-		<div id="tituloAyuda"><h2>Servicio de ayuda</h2></div>
+		<div id="tituloAyuda"><h2>Servicio de Ayuda</h2></div>
 		 
 			 <form action="ayudaExito.php" method="post">
           <table align="center">

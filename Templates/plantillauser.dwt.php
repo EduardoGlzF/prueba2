@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>CompuTec</title>
+<title>CompuTec </title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
@@ -25,10 +25,11 @@
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="#">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./telefoniauser.php">Telefonía</a></li>
+						<li class="menuH"><a href="./computouser.php">Cómputo</a></li>
+						<li class="menuH"><a href="./ofertauser.php">Ofertas</a></li>
+						
 					</ul>			
 				</div>
 						
