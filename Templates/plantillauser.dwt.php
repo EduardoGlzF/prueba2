@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- TemplateBeginEditable name="doctitle" -->
-<title>CompuTec</title>
+<title>CompuTec </title>
 <!-- TemplateEndEditable -->
 <!-- TemplateBeginEditable name="head" -->
 <!-- TemplateEndEditable -->
