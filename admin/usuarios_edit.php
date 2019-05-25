@@ -56,8 +56,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	

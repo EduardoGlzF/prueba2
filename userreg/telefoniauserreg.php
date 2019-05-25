@@ -54,8 +54,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
-</head>
-				
+</head>				
   		
 
 <body id="cuerpo">
@@ -71,9 +70,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
-				</div>
-						
-							
+				</div>					
+								
 		
 		 </div>					 		
 			 		 		 		
@@ -105,29 +103,17 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 		
 		<div id="pie" >
 			<div align="center" class="pieorden">
-<<<<<<< HEAD
 				<div class="pie1"><a href="./nosotros.php"><h2>Nosotros</h2></a> 
-=======
-				<div class="pie1"><a href="../nosotros.php"><h2>Nosotros</h2></a> 
->>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
 					<p>Nuestra visión</p>
 				</div>
-<<<<<<< HEAD
 				<div class="pie1"><a href="./politicaR.php"><h2>Nuestras Políticas</h2></a>
-=======
-				<div class="pie1"><a href="../politicaR.php"><h2>Nuestras Políticas</h2></a>
->>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Seguridad </p>
 					<p>Calidad </p>
 					<p>Devoluciones</p>
 				</div>
-<<<<<<< HEAD
 				<div class="pie1"><a href="./ayudaR.php"><h2>Contáctanos</h2></a>
-=======
-				<div class="pie1"><a href="../ayudaR.php"><h2>Contáctanos</h2></a>
->>>>>>> 99c181896fb84bc84b9b94a7db54c71e42015fbe
 					<p>Información por correo</p>
 					<p>Servicio de Ayuda</p>
 				</div>

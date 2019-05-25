@@ -69,8 +69,7 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	

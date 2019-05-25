@@ -65,8 +65,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	

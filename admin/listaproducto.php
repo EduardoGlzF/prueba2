@@ -60,8 +60,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	

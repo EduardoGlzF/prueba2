@@ -218,6 +218,8 @@ ul.menuH li{ /*Menu horizontal*/
 	font-size: 18px;
 }
 
+
+/* estilos pie de pagina*/
 .pie1 {
 	/*background-color: #06F;*/
 	font-size: 16px;
@@ -232,6 +234,28 @@ ul.menuH li{ /*Menu horizontal*/
 .pieorden{
 	display: flex;
 	justify-content: space-around;
+}
+
+#cuerpo #principal #pie .pieorden .pie1 a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*estilos encabezados de seleccion articulos*/
+#cuerpo #principal #contenido div h1{
+	color: #FF8c00;
+	text-shadow: 2px 1px black;
+}
+
+#cuerpo #principal #contenido #cuerpoayuda #formDiv #tituloAyuda h2{
+	color: #FF8c00;
+	text-shadow: 2px 1px black;
+}
+
+#cuerpo #principal #contenido #politicaTxt h2{
+	color: #FF8c00;
+	text-shadow: 2px 1px black;
 }
 
 

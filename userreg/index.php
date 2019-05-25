@@ -23,8 +23,7 @@ include("../funciones.php")
  <meta name="viewport" content="width = divice-width,
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
-</head>
-				
+</head>				
   		
 
 <body id="cuerpo">
@@ -40,8 +39,7 @@ include("../funciones.php")
 						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
-				</div>
-						
+				</div>					
 								
 		
 		 </div>					 		

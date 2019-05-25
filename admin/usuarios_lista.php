@@ -58,8 +58,7 @@ $queryString_datosusuario = sprintf("&totalRows_datosusuario=%d%s", $totalRows_d
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	

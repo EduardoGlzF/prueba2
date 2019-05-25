@@ -15,8 +15,7 @@
          user-scalable=no, initial-scale=1, maximum-scale=1,
          minima-scale=1">
 </head>
-				
-  		
+				  		
 
 <body id="cuerpo">
 	
@@ -67,16 +66,17 @@ Disfrutar mientras somos los mejores.<br>
 <bloquote class="nosotrosBq">Creemos en satisfacer las necesidades únicas de los clientes, de principio a fin. Nos esforzamos en tratar a los clientes como únicos y en honrar sus diferencias como grupos e individuos.</bloquote>
 				<br>
 
-<h2 class="h2nosotros">	Nuestra Esencia</h2>
+<div id="mapa">
+			<h2 class="h2nosotros">	Ubicación</h2>
 			
-		<bloquote class="nosotrosBq">
-		Una creencia fundamental en comprender y aprovechar las fortalezas únicas del individuo, es proveer una experiencia extraordinaria a los clientes y empleados.
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d532.8865496959586!2d-98.34680397552077!3d26.039473861536298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1558808912640!5m2!1ses-419!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+		
+			
+		</div>			
+			
 
-		</bloquote>
-		
-		
-</div>						
-			
+</div>			
+	
 			<!-- InstanceEndEditable -->
 		</div><br>
 		
@@ -102,3 +102,5 @@ Disfrutar mientras somos los mejores.<br>
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
+
