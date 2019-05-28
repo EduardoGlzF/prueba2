@@ -50,8 +50,7 @@
 
 	<h2 class="h2nosotros">Nuestra Misión</h2>
 	<bloquote class="nosotrosBq">Impulsamos el potencial humano y ayudamos a las familias mexicanas a mejorar y empoderar sus vidas a través de la tecnología.</bloquote>
-				<br>
-	
+				<br>	
 
 	<h2 class="h2nosotros">Nuestros Valores</h2>	
 <bloquote class="nosotrosBq">	
@@ -70,8 +69,7 @@ Disfrutar mientras somos los mejores.<br>
 			<h2 class="h2nosotros">	Ubicación</h2>
 			
 	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d532.8865496959586!2d-98.34680397552077!3d26.039473861536298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sus!4v1558808912640!5m2!1ses-419!2sus" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-		
-			
+					
 		</div>			
 			
 
