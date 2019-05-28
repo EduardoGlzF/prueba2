@@ -109,7 +109,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 				<div class="pie1"><a href="nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
-					<p>Nuestra visión</p>
+					<p>Ubicación </p>
 				</div>
 				<div class="pie1"><a href="politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
