@@ -46,7 +46,7 @@
 			<div id="nosotrosTxt">
 				
 				<h1>¡Bienvenido a CompuTec! </h1>
-				<h2>¿Cómo te podemos ayudar?</h2>
+				<h2>A tu alcance  en un click</h2>
 				<br>
 
 	<h2 class="h2nosotros">Nuestra Misión</h2>
