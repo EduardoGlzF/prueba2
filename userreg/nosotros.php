@@ -46,7 +46,7 @@
 			<div id="nosotrosTxt">
 				
 				<h1>¡Bienvenido a CompuTec! </h1>
-				<h2>¿Cómo te podemos ayudar?</h2>
+				<h2>A tu alcance  en un click</h2>
 				<br>
 
 	<h2 class="h2nosotros">Nuestra Misión</h2>
@@ -88,7 +88,7 @@ Disfrutar mientras somos los mejores.
 				<div class="pie1"><a href="../nosotrosU.php"><h2>Nosotros</h2></a> 
 					<p>Nuestros valores</p>
 					<p>Nuestra misión</p>
-					<p>Nuestra visión</p>
+					<p>Ubicación </p>
 				</div>
 				<div class="pie1"><a href="../politicasU.php"><h2>Nuestras Políticas</h2></a>
 					<p>Seguridad </p>
