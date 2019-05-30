@@ -39,7 +39,9 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" --><h1>Proximamente</h1><!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" --><div align="center">
+			<h1>Proximamente</h1>
+		    <img src="imagenes/hombres_trabajando.gif" width="519" height="455" alt=""/> </div><!-- InstanceEndEditable -->
 		</div><br>
 		
 		

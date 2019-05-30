@@ -84,7 +84,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
 			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			
+			<div align="center">
 			<h1 align="center">Editar Usuarios</h1>
   <p>&nbsp;</p>
   <form action="<?php echo $editFormAction; ?>" method="post" name="form1" id="form1">
@@ -128,6 +128,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
     <input type="hidden" name="MM_update" value="form1" />
     <input type="hidden" name="idUsuario" value="<?php echo $row_Recordset1['idUsuario']; ?>" />
   </form>
+			</div>
   <p>&nbsp;</p>
 			<!-- InstanceEndEditable -->
 		</div><br>

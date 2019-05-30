@@ -137,6 +137,11 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form2")) {
        <input type="hidden" name="MM_insert" value="form2" />
       </form>
      <p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
    </div>
   <!-- InstanceEndEditable -->
 		</div><br>

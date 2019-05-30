@@ -40,7 +40,9 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable
+			<!-- InstanceBeginEditable name="contenidoeditable" --><div align="center">
+     <h1>Bienvenido administrador</h1>
+			<img src="../imagenes/banner-8-motivos-contratar-adiministrador.png" width="960" height="500" alt=""/> </div>
 			
 			<!-- InstanceEndEditable -->
 		</div><br>

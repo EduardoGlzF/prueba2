@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>Proximamente</title>
+<title>CompuTec </title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -40,11 +40,7 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			<div align="center">
-			<h1>Proximamente</h1>
-		    <img src="imagenes/hombres_trabajando.gif" width="519" height="455" alt=""/> </div>
-			<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
 		</div><br>
 		
 		

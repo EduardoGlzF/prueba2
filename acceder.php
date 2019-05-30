@@ -55,7 +55,8 @@ if (isset($_POST['strEmail'])) {
     
   }
   else {
-    header("Location: ". $MM_redirectLoginFailed );
+   header("Location: ". $MM_redirectLoginFailed );
+	  
   }
 }
 ?>
@@ -65,6 +66,9 @@ if (isset($_POST['strEmail'])) {
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Acceder</title>
+	<script language= javascript type= text/javascript >
+function MiFuncionJS(){  alert(" EXITO");}
+</script >
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -130,6 +134,13 @@ if (isset($_POST['strEmail'])) {
     </table>
       </form>
      <p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>
+		<p>&nbsp;</p>	
+		
    </div>
 			
 			
