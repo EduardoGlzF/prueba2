@@ -24,15 +24,14 @@
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>						
 						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
 						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
 						
 					</ul>			
 				</div>
+					<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
 							
 			
 		</div>		
@@ -41,7 +40,9 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable
+			
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		

@@ -1,24 +1,9 @@
-<?php require_once('./conexion/conexionbd.php'); ?>
-<?php
-
-
-$varPro_Recordset1 = "0";
-if (isset($_GET["recordID"])) {
-  $varPro_Recordset1 = $_GET["recordID"];
-}
-mysqli_select_db($conexionbd,$database_conexionbd);
-$varprodu=$varPro_Recordset1;
-$query_Recordset1 = "SELECT * FROM tblproducto WHERE tblproducto.idProductos = '$varprodu'";
-$Recordset1 = mysqli_query($conexionbd,$query_Recordset1) or die(mysqli_error());
-$row_Recordset1 = mysqli_fetch_assoc($Recordset1);
-$totalRows_Recordset1 = mysqli_num_rows($Recordset1);
-?>
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>CompuTec</title>
+<title>Proximamente</title>
 <!-- InstanceEndEditable -->
 <!-- InstanceBeginEditable name="head" -->
 <!-- InstanceEndEditable -->
@@ -55,29 +40,8 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->
-			
-			<div align="center">
-      <h1><?php echo $row_Recordset1['strNombre']; ?> </h1>
-      <p><img src="./imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="456" height="412" align="left" /></p>
-      <h5>Descripcion:<br />
-     
-      <p><?php echo $row_Recordset1['strDescripcion']; ?></p>
-      
-      <h5>Precio: $<?php echo $row_Recordset1['dblPrecio']; ?></h5>
-      <p>&nbsp;</p>
-      <p><a href="./prox.php"><img src="./imagenes/orange_ordernow.png" width="392" height="130" /></a></p>
-      <p><a href="javascript:window.history.go(-1);"><img src="./imagenes/1359958110498699254boton-atras.png" width="447" height="148" /></a></p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-      <p>&nbsp;</p>
-    </div>
+			<!-- InstanceBeginEditable name="contenidoeditable" --><h1>Proximamente</h1>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
@@ -102,3 +66,5 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
+

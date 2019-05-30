@@ -40,6 +40,7 @@ $Recordset1 = mysqli_query($conexionbd,$query_Recordset1) or die(mysql_error());
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 ?>
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaadmin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -66,15 +67,14 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>						
 						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
 						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
 						
 					</ul>			
 				</div>
+					<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
 							
 			
 		</div>		
@@ -156,3 +156,4 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+

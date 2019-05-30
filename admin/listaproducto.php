@@ -44,6 +44,8 @@ if (isset($_GET['totalRows_Recordset1'])) {
 $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 	  ?>
 
+
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaadmin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -70,15 +72,14 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>						
 						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
 						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
 						
 					</ul>			
 				</div>
+					<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
 							
 			
 		</div>		
@@ -139,6 +140,7 @@ $totalPages_Recordset1 = ceil($totalRows_Recordset1/$maxRows_Recordset1)-1;
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
 <?php
 mysqli_free_result($Recordset1);
 ?>

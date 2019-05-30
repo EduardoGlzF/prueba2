@@ -62,8 +62,9 @@ if ((isset($_GET['recordID'])) && ($_GET['recordID'] != "")) {
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
 				</div>					
-								
-		
+								<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
+					
 		 </div>					 		
 			 		 		 		
   		<div id="contenido">

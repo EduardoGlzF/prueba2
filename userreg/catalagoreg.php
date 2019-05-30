@@ -39,6 +39,7 @@ $Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error()
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 ?>
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -71,8 +72,9 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
 				</div>					
-								
-		
+								<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
+					
 		 </div>					 		
 			 		 		 		
   		<div id="contenido">
@@ -122,6 +124,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
 <?php
 mysqli_free_result($Recordset1);
 ?>

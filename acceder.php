@@ -2,20 +2,22 @@
 
 <?php
 // *** Validate request to login to this site.
-if (!isset($_SESSION)) {
+/*if (!isset($_SESSION)) {
   session_start();
-}
+}*/
 
 $loginFormAction = $_SERVER['PHP_SELF'];
 if (isset($_GET['accesscheck'])) {
   $_SESSION['PrevUrl'] = $_GET['accesscheck'];
 }
 
+
 if (isset($_POST['strEmail'])) {
   $loginUsername=$_POST['strEmail'];
   $password=$_POST['strContraseña'];
   $MM_fldUserAuthorization = "intPrivilegio";
   $MM_redirectLoginSuccess = "./userreg/indexU.php";
+  $MM_redirectLoginSuccess1 = "./admin/index_admi.php";
   $MM_redirectLoginFailed = "error_ini.php";
   $MM_redirecttoReferrer = false;
   mysqli_select_db($conexionbd,$database_conexionbd);
@@ -27,11 +29,13 @@ if (isset($_POST['strEmail'])) {
   $row_LoginRS = mysqli_fetch_assoc($LoginRS);
   $loginFoundUser = mysqli_num_rows($LoginRS);
   if ($loginFoundUser) {
-    
+   
     $loginStrGroup  = mysqli_fetch_row ($LoginRS,0,'intPrivilegio');
     
-	if (PHP_VERSION >= 5.1) {session_regenerate_id(true);} else {session_regenerate_id();}
+	//if (PHP_VERSION >= 5.1) {session_regenerate_id(true);} else {session_regenerate_id();}
     //declare two session variables and assign them
+	session_start();
+	 
     $_SESSION['MM_Username'] = $loginUsername;
     $_SESSION['MM_UserGroup'] = $loginStrGroup;	      
     $_SESSION['MM_IdUsuario'] = $row_LoginRS["idUsuario"];
@@ -39,7 +43,16 @@ if (isset($_POST['strEmail'])) {
     if (isset($_SESSION['PrevUrl']) && false) {
       $MM_redirectLoginSuccess = $_SESSION['PrevUrl'];	
     }
-    header("Location: " . $MM_redirectLoginSuccess );
+	  if($row_LoginRS["intPrivilegio"] ==1){
+		  
+		  $_SESSION['validacion']=1; 
+		  header("Location: " . $MM_redirectLoginSuccess1 );
+	  }else{
+		  
+		  $_SESSION['validacion']=2; 
+		  header("Location: " . $MM_redirectLoginSuccess );
+	  }
+    
   }
   else {
     header("Location: ". $MM_redirectLoginFailed );

@@ -53,6 +53,8 @@ $row_datosproductos = mysqli_fetch_assoc($datosproductos);
 $totalRows_datosproductos = mysqli_num_rows($datosproductos);
 ?>
 
+
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaadmin.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -79,15 +81,14 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="index_admi.php">Inicio</a></li>
-						<li class="menuH"><a href="#">Telefonía</a></li>
-						<li class="menuH"><a href="#">Cómputo</a></li>
-						<li class="menuH"><a href="#">Ofertas</a></li>
+						<li class="menuH"><a href="index_admi.php">Inicio</a></li>						
 						<li class="menuH"><a href="listaproducto.php">lista de productos</a></li>
 						<li class="menuH"><a href="usuarios_lista.php">Lista de usuarios registrados</a></li>
 						
 					</ul>			
 				</div>
+					<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
 							
 			
 		</div>		
@@ -137,7 +138,7 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">Imagen:</td>
           <td><input type="text" name="strImagen" value="<?php echo htmlentities($row_datosproductos['strImagen'], ENT_COMPAT, 'iso-8859-1'); ?>" size="32" />
-            <input type="button" name="button" id="button" value="Subir imagen" onclick="javascrip:subirimagen();"=/></td>
+            <input type="button" name="button" id="button" value="Subir imagen" onClick="javascrip:subirimagen();"=/></td>
         </tr>
         <tr valign="baseline">
           <td nowrap="nowrap" align="right">&nbsp;</td>
@@ -177,6 +178,7 @@ $totalRows_datosproductos = mysqli_num_rows($datosproductos);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
 <?php
 mysqli_free_result($datosproductos);
 ?>

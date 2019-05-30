@@ -1,35 +1,5 @@
 <?php require_once('../conexion/conexionbd.php'); ?>
 <?php
-if (!function_exists("GetSQLValueString")) {
-function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
-{
-  if (PHP_VERSION < 6) {
-    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
-  }
-
-  $theValue = function_exists("mysql_real_escape_string") ? mysqli_real_escape_string($theValue) : mysqli_escape_string($theValue);
-
-  switch ($theType) {
-    case "text":
-      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;    
-    case "long":
-    case "int":
-      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
-      break;
-    case "double":
-      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
-      break;
-    case "date":
-      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
-      break;
-    case "defined":
-      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
-      break;
-  }
-  return $theValue;
-}
-}
 
 
 mysqli_select_db( $conexionbd, $database_conexionbd);
@@ -38,6 +8,7 @@ $Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error()
 $row_Recordset1 = mysqli_fetch_assoc($Recordset1);
 $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 ?>
+
 
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillaureg.dwt.php" codeOutsideHTMLIsLocked="false" -->
@@ -71,8 +42,9 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
 					</ul>			
 				</div>					
-								
-		
+								<div id="login"><a href="../index.php"><img src="../imagenes/logout.png" width="40" height="40" alt="imagen usuario"/></a>
+			<p>Cerrar sesión</p></div>	
+					
 		 </div>					 		
 			 		 		 		
   		<div id="contenido">
@@ -122,6 +94,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 	</div>
 </body>
 <!-- InstanceEnd --></html>
+
 
 <?php
 mysqli_free_result($Recordset1);
