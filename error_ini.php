@@ -40,7 +40,19 @@
   		<div id="contenido">
   		
 			<!--<div id="menu">Colocar aquí el contenido para  id "menu"</div> -->
-			<!-- InstanceBeginEditable name="contenidoeditable" -->contenidoeditable<!-- InstanceEndEditable -->
+			<!-- InstanceBeginEditable name="contenidoeditable" --><div align="center">
+     <h1>Error al iniciar sesion</h1>
+			<a href="javascript:window.history.go(-1);"><img src="./imagenes/1359958110498699254boton-atras.png" width="447" height="148" /></a>
+			</div>
+			
+			
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		
