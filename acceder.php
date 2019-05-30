@@ -15,7 +15,7 @@ if (isset($_POST['strEmail'])) {
   $loginUsername=$_POST['strEmail'];
   $password=$_POST['strContraseña'];
   $MM_fldUserAuthorization = "intPrivilegio";
-  $MM_redirectLoginSuccess = "./userreg/index.php";
+  $MM_redirectLoginSuccess = "./userreg/indexU.php";
   $MM_redirectLoginFailed = "error_ini.php";
   $MM_redirecttoReferrer = false;
   mysqli_select_db($conexionbd,$database_conexionbd);

@@ -62,7 +62,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
       
       <h5>Precio: $<?php echo $row_Recordset1['dblPrecio']; ?></h5>
       <p>&nbsp;</p>
-      <p><a href="carrito_add.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/orange_ordernow.png" width="392" height="130" /></a></p>
+      <p><a href="./carrito_add.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="../imagenes/orange_ordernow.png" width="392" height="130" /></a></p>
       <p><a href="catalagoreg.php"><img src="../imagenes/1359958110498699254boton-atras.png" width="447" height="148" /></a></p>
       <p>&nbsp;</p>
       <p>&nbsp;</p>
