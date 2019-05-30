@@ -78,6 +78,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
       <p>&nbsp;</p>
       <p>&nbsp;</p>
     </div>
+			<!-- InstanceEndEditable -->
 		</div><br>
 		
 		

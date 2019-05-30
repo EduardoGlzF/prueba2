@@ -54,7 +54,7 @@ $totalRows_datoscarrito = mysqli_num_rows($datoscarrito);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./indexU.php">Inicio</a></li>
 						<li class="menuH"><a href="./telefoniauserreg.php">Telefonía</a></li>
 						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>

@@ -258,7 +258,10 @@ ul.menuH li{ /*Menu horizontal*/
 	text-shadow: 2px 1px black;
 }
 
-
+#cuerpo #principal #contenido div{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
 
 /*.pie1 a h2{
 	text-decoration: none;

@@ -1,3 +1,44 @@
+<?php require_once('./conexion/conexionbd.php'); ?>
+<?php
+
+if (!function_exists("GetSQLValueString")) {
+function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
+{
+  if (PHP_VERSION < 6) {
+    $theValue = get_magic_quotes_gpc() ? stripslashes($theValue) : $theValue;
+  }
+
+  $theValue = function_exists("mysql_real_escape_string") ? mysqli_real_escape_string($theValue) : mysqli_escape_string($theValue);
+
+  switch ($theType) {
+    case "text":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;    
+    case "long":
+    case "int":
+      $theValue = ($theValue != "") ? intval($theValue) : "NULL";
+      break;
+    case "double":
+      $theValue = ($theValue != "") ? doubleval($theValue) : "NULL";
+      break;
+    case "date":
+      $theValue = ($theValue != "") ? "'" . $theValue . "'" : "NULL";
+      break;
+    case "defined":
+      $theValue = ($theValue != "") ? $theDefinedValue : $theNotDefinedValue;
+      break;
+  }
+  return $theValue;
+}}
+
+mysqli_select_db( $conexionbd, $database_conexionbd);
+$query_Recordset1 = "SELECT * FROM tblproducto where categoria='oferta' LIMIT 0,3";
+$Recordset1 = mysqli_query($conexionbd, $query_Recordset1) or die(mysqli_error());
+$row_Recordset1 = mysqli_fetch_assoc($Recordset1);
+$totalRows_Recordset1 = mysqli_num_rows($Recordset1);
+?>
+
+
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/plantillauser.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
@@ -59,6 +100,24 @@
 			</div>
 			
 			
+			<div class="catalogoIndex">  
+			
+				<div id="h1catalogo"><h1>Ofertas</h1></div>
+						
+				<div class="galeria", align="center">   				 
+     				 <?php do { ?>
+       				 <div class="producto"  >
+	   				 	<h4  align="center" > <?php echo $row_Recordset1['strNombre']; ?></h4>
+        			 	<h4>        
+         			 		<img src="./imagenes/productos/<?php echo $row_Recordset1['strImagen']; ?>" width="270" height="168" /> 
+           			 		<p>&nbsp;</p>
+         			 		<pre> Precio:$<?php echo $row_Recordset1['dblPrecio']; ?></pre>
+        			 	</h4>
+        			 	<p><a href="./ver_producto.php?recordID=<?php echo $row_Recordset1['idProductos']; ?>"><img src="./imagenes/masinformacion.png" width="265" height="86" /></a></p>
+       				</div>
+      			    <?php } while ($row_Recordset1 = mysqli_fetch_assoc($Recordset1)); ?>
+   				</div>	
+			</div>
 			
 			
 			<!-- InstanceEndEditable -->
@@ -87,4 +146,6 @@
 </body>
 <!-- InstanceEnd --></html>
 
-
+<?php
+mysqli_free_result($Recordset1);
+?>

@@ -39,7 +39,7 @@ $totalRows_Recordset1 = mysqli_num_rows($Recordset1);
 			
 				<div id="menuHorizontal">
 					<ul class="menuH">
-						<li class="menuH"><a href="./index.php">Inicio</a></li>
+						<li class="menuH"><a href="./indexU.php">Inicio</a></li>
 						<li class="menuH"><a href="./telefoniauserreg.php">Telefonía</a></li>
 						<li class="menuH"><a href="./catalagoreg.php">Cómputo</a></li>
 						<li class="menuH"><a href="./ofertauserreg">Ofertas</a></li>
